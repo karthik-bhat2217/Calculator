@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="calulatorstyle.css">
+            
+        <script src="calculatorfunction.js"></script>
+           
+            
+    </head>
+    <body>
+        <div class="calc">
+        <h1 class="header">Calculator</h1>
+        <form>
+            <div class="in">
+            1st Number:<input type="text" id="x" size=4 value=0><br><br>
+            2nd Number:<input type="text" id="y" size=4  value=0 /><br><br>
+        </div>
+           <div class="buttons">
+               
+            <input type="button" id="op" class="b" value ="+" onclick="operate('+')" /> 
+            <input type="button" id="op" class="b" value="-" onclick="operate('-')"/>
+            <input type="button" id="op" class="b" value ="/" onclick="operate('/')" /><br><br> 
+            <input type="button" id="op" class="b" value="*" onclick="operate('*')"/>
+            <input type="button" id="op" class="b" value ="%" onclick="operate('%')" /> 
+            <input type="button" id="op" class="b" value="^" onclick="operate('^')"/><br><br>
+           <input type="reset" value="C" onclick="operate('C')"/>
+        </div>
+        </form>
+        <p class="res" >
+            Result is<h4 id="result"></h4>
+        </p>
+    </div>
+    </body>
+</html>
